@@ -53,22 +53,39 @@
         </div>
     </nav>
 
-    <main>
-    <div id="hero" class="center measure-wide pt4">
-          <div class="h5 bg-center cover" style="background-image: url(img/hero.gif);"></div>
-    </div>
+    <main class="measure center">
+        <div id="hero" class="pt4">
+            <div class="h5 bg-center cover" style="background-image: url(img/hero.gif);"></div>
+        </div>
 
-    <div id="intro" class="ph4 ph5-ns pv2 pv2-ns measure-narrow mw5 mw7-ns center avenir">
-        <h1 class="f2 lh-title mb0 athelas orange">Solve problems.</h1>
-        <p class="f5 mt1">
-            The Commons is an exploitable resource shared by a group of people as well as the extent and the hierarchy of use of the resource. Exploitation of the commons to depletion leads to failure of the commons, or what many of us know as the Tragedy of the
-            Commons.
-        </p>
-        <span id="cta-buttons" class="fr pt4">
+        <div id="intro" class="pv2 pv2-ns mw5 mw7-ns avenir">
+            <h1 class="f2 lh-title mb0 athelas orange">Solve problems.</h1>
+            <p class="f5 mt1">
+                The Commons is an exploitable resource shared by a group of people as well as the extent and the hierarchy of use of the resource. Exploitation of the commons to depletion leads to failure of the commons, or what many of us know as the Tragedy of the
+                Commons.
+            </p>
+            <span id="cta-buttons" class="fr pt4">
           <a class="f6 link dim ph2 pv2 mb2 dib black-70 mr2" href="#0">Learn More</a>
           <a class="f6 link dim br3 ph4 pv2 mb2 dib white bg-orange" href="#0">Try Now</a>
         </span>
-    </div>
+        </div>
+
+        <article class="black-80 pt6">
+            <form action="sign-up_submit" method="get" accept-charset="utf-8">
+                <fieldset id="sign_up" class="ba b--transparent ph0 mh0">
+                    <legend class="ph0 mh0 fw6 clip">Sign Up</legend>
+                    <div class="mt3">
+                        <label class="db f6" for="email-address">Email address</label>
+                        <input class="pa2 input-reset ba bg-transparent w-100 measure" type="email" name="email-address" id="email-address">
+                    </div>
+                    <div class="mt3">
+                        <label class="db f6" for="password">Password</label>
+                        <input class="b pa2 input-reset ba bg-transparent" type="password" name="password" id="password">
+                    </div>
+                </fieldset>
+                <div class="mt3 fr"><input class="b ph3 pv2 input-reset ba b--black bg-transparent grow pointer f6" type="submit" value="Sign Up"></div>
+            </form>
+        </article>
     </main>
 
 
