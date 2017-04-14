@@ -22,7 +22,9 @@
 
     <style>
         body {
-            background-color: #2F241F;
+          background-color: #2F241F;
+          background-color: red;
+
         }
 
         nav {
@@ -30,54 +32,48 @@
             text-transform: uppercase;
         }
 
-        #maintext {
-            /*color: #2F241F;*/
-            color: white;
+        footer {
+          background-color: #2F241F;
         }
 
-        #explore {
-          background-color: #2F241F;
-          border-style: solid;
-          border-radius: 4pt;
-          border-color: #2F241F;
-          border-width: 3pt;
+        #maintext {
+            color: #2F241F;
         }
+
         #heroimg {
-          height: calc(100% - 1em)
+            /*height: calc(100% - 50px);*/
+            /*right: 1em;*/
         }
     </style>
 
 </head>
 
 <body class="">
-
     <header class="">
-        <div id="heroimg" class="cover bg-left bg-center-l" style="background-image: url(img/heroimg-gradientmap.png);">
-            <div class="pb7">
-                <nav class="dt w-100 center">
-                    <div class="dtc w2 v-mid pa3">
-                        <a href="/" class="dib w5 h2 pv2">
-                          <img src="img/logo.svg">
-                        </a>
-                    </div>
-                    <div class="dtc v-mid tr pa3">
-                        <a class="f6 fw4 hover-orange no-underline white dn dib-ns pv2 ph3" href="/">About</a>
-                        <a class="f6 fw4 hover-orange no-underline white dn dib-ns pv2 ph3" href="/">Resources</a>
-                        <a class="f6 fw4 hover-orange no-underline white dn dib-l pv2 ph3" href="/">Blog</a>
-                        <a class="f6 fw4 hover-orange no-underline white dn dib-l pv2 ph3" href="/">Download</a>
-                        <a class="f6 fw6 hover-orange no-underline white dib ml2 pv2 ph3 ba br2 b--orange mr2 mr3-ns grow" href="/">Sign In</a>
-                        <a class="f6 fw6 hover-white no-underline white dib ml2 pv2 ph3 ba br2 b--orange mr2 mr3-ns bg-orange grow" href="/signup.html">Sign Up</a>
-                    </div>
-                </nav>
-                <div id="maintext" class="mt4 mt5-m mt6-l ph3 measure">
-                    <h1 class="f2 f1-l mb0 lh-solid">platform your negotiations</h1>
-                    <h2 class="f3 mt2 mb3 fw4">Engage your group and make decisions together.</h2>
-                    <a id="explore" class="f6 fw6 hover-white no-underline white dib pv2 ph3 grow ttu fr bg-orange" href="#0">Explore Now</a>
-                </div>
+        <nav class="dt w-100 center">
+            <div class="dtc w2 v-mid pa3">
+                <a href="/" class="dib w5 h2 pv2">
+                    <img src="img/logo.svg">
+                </a>
             </div>
-        </div>
+            <div class="dtc v-mid tr pa3">
+                <a class="f6 fw4 hover-orange no-underline white dn dib-ns pv2 ph3" href="/">About</a>
+                <a class="f6 fw4 hover-orange no-underline white dn dib-ns pv2 ph3" href="/">Resources</a>
+                <a class="f6 fw4 hover-orange no-underline white dn dib-l pv2 ph3" href="/">Blog</a>
+                <a class="f6 fw4 hover-orange no-underline white dn dib-l pv2 ph3" href="/">Download</a>
+                <a class="f6 fw6 hover-orange no-underline white dib ml2 pv2 ph3 ba br2 b--orange mr2 mr3-ns grow" href="/">Sign In</a>
+                <a class="f6 fw6 hover-white no-underline white dib mh0 pv2 ph3 br2 mr2 mr3-ns bg-orange grow" href="/signup.html">Sign Up</a>
+            </div>
+        </nav>
     </header>
-    <footer class="mt1 pv4 v-btm white">
+    <div id="heroimg" class="cover vh-75 bg-left" style="background-image: url(img/heroimg.png);">
+        <div id="maintext" class="pt5 ph3 measure fr">
+            <h1 class="f2 f1-l mb0 lh-solid">platform your negotiations</h1>
+            <h2 class="f3 mt2 mb3 fw4">Engage your group and make decisions together.</h2>
+            <a id="explore" class="f6 fw6 hover-white no-underline white dib pv2 ph3 ba br2 b--orange mr2 mr3-ns bg-orange grow ttu" href="#0">Explore Now Free</a>
+        </div>
+    </div>
+    <footer class="pv4 absolute white w-100">
         <small class="f6 db tc">© 2017 <b class="ttu">Recommoner</b>. All Rights Reserved</small>
         <div class="tc mt1">
             <a href="#" title="Language" class="f6 dib ph2 link white dim">Language</a>
