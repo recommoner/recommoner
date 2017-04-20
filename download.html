@@ -23,7 +23,7 @@
     <style>
         body {
             background-color: #FF7734;
-            font-family: "UniversLTStd-Light";
+            /*font-family: "UniversLTStd-Light";*/
         }
 
         nav {
@@ -39,7 +39,7 @@
             min-height: 100px;
             max-height: 150px;
             width: 100%;
-            position: absolute;
+            /*position: absolute;*/
             bottom: 0;
             left: 0;
         }
@@ -48,8 +48,8 @@
             color: #293B4E;
         }
 
-        #maintext h1 {
-            font-family: "UniversLTStd-BoldCn"
+        h1 {
+            font-family: "UniversLTStd-Bold"
         }
 
         #wrapper {
@@ -85,6 +85,11 @@
         }
 
         @font-face {
+            font-family: "UniversLTStd-Bold";
+            src: url('UniversLTStd-Bold.otf');
+        }
+
+        @font-face {
             font-family: "UniversLTStd-Light";
             src: url('UniversLTStd-Light.otf');
         }
@@ -103,7 +108,7 @@
 
 </head>
 
-<body class="">
+<body class="sans-serif">
     <main id="wrapper">
         <header class="">
             <nav class="dt w-100 center pa3">
@@ -124,33 +129,49 @@
         </header>
 
         <div id="content">
-            <article class="mw7 mt4 center ph3 ph5-ns pv4 mb5 br3 bg-white">
-                <h1 class="fw6 f3 f2-ns tc lh-title mt0 mb3">Big things are in the works. Recommoner is coming.</h1>
-                <h2 class="fw3 f4 lh-copy tc mt0 mb3">Engage your group and make decisions together. We
-                  want you to be involved. Sign up and we'll let you know as soon as Recommoner is ready.</h2>
+            <article class="mw8 w-80 mt4 center ph2 ph3-ns pv4 mb5 br3 bg-white">
+                <h1 id="title" class="f4 f2-ns tc lh-title mt0 mb3 measure center">Download Toolkit & Resources</h1>
                 <article class="cf">
-                    <div class="fl w-100 w-50-ns bg-near-white tc">
-                      <form class="pa4 black-80" action="" method="">
-                          <div class="measure center">
-                              <label for="email" class="f6 b db mb2">Email</label>
-                              <input name="email" id="email" class="input-reset ba b--black-20 br1 pa2 mb2 db w-100" type="text" aria-describedby="name-desc">
-                              <small id="name-desc" class="f6 db mb3">Enter your email if you want to stay informed. We value your privacy and will never send you spam.</small>
-                              <input type="submit" name="submit" placeholder="Sign Up" class="f6 br3 white no-underline bg-orange ba b--orange grow pv2 ph4 dib fr" />
-                          </div>
-                      </form>
+                    <div class="fl w-100 w-50-ns">
+                        <form class="pa2 black-80" action="" method="">
+                            <div class="center">
+                                <!-- <label for="email" class="f6 b db mb2">Email</label> -->
+                                <input name="name" id="name" class="input-reset ba b--black-20 br2 pa2 mb3 db w-100" type="text" placeholder="Name">
+                                <!-- <label for="email" class="f6 b db mb2">Email</label> -->
+                                <input name="email" id="email" class="input-reset ba b--black-20 br2 pa2 mb3 db w-100" type="text" placeholder="Email">
+                                <!-- <label for="email" class="f6 b db mb2">Email</label> -->
+                                <input name="profession" id="email" class="input-reset ba b--black-20 br2 pa2 mb3 db w-100" type="text" placeholder="Profession or Affiliation">
+                                <!-- <label for="email" class="f6 b db mb2">Email</label> -->
+                                <input name="referral" id="email" class="input-reset ba b--black-20 br2 pa2 mb3 db w-100" type="text" placeholder="How did you find Recommoner?">
+
+                                <fieldset id="intended-use" class="bn pa0">
+                                    <legend class="fw5 f5 mv2 ma0">How are you going to use Recommoner?</legend>
+                                    <div class="flex items-center mb2">
+                                        <input class="mr2" type="checkbox" id="community" value="community">
+                                        <label for="community" class="lh-copy">Community Issue</label>
+                                    </div>
+                                    <div class="flex items-center mb2">
+                                        <input class="mr2" type="checkbox" id="business" value="business">
+                                        <label for="business" class="lh-copy">Business</label>
+                                    </div>
+                                    <div class="flex items-center mb2">
+                                        <input class="mr2" type="checkbox" id="classroom" value="classroom">
+                                        <label for="classroom" class="lh-copy">Classroom</label>
+                                    </div>
+                                    <div class="flex items-center mb2">
+                                        <input class="mr2" type="checkbox" id="research" value="research">
+                                        <label for="research" class="lh-copy">Research</label>
+                                    </div>
+                                </fieldset>
+                                <small id="disclosure" class="f6 db mv3">We would like to stay connected. By downloading our resources, you agree to grant us the ability to follow up with you with correspondence relating to your usage.</small>
+                                <input type="submit" name="submit" placeholder="Sign Up" class="f6 br3 white no-underline bg-orange ba b--orange grow pv2 ph4 dib fr" />
+                            </div>
+                        </form>
                     </div>
                     <div class="fl w-100 w-50-ns bg-light-gray tc">
                         <h1>Column Two</h1>
                     </div>
                 </article>
-                <!-- <form class="pa4 black-80" action="" method="">
-                    <div class="measure center">
-                        <label for="email" class="f6 b db mb2">Email</label>
-                        <input name="email" id="email" class="input-reset ba b--black-20 br1 pa2 mb2 db w-100" type="text" aria-describedby="name-desc">
-                        <small id="name-desc" class="f6 db mb3">Enter your email if you want to stay informed. We value your privacy and will never send you spam.</small>
-                        <input type="submit" name="submit" placeholder="Sign Up" class="f6 br3 white no-underline bg-orange ba b--orange grow pv2 ph4 dib fr" />
-                    </div>
-                </form> -->
             </article>
     </main>
 
