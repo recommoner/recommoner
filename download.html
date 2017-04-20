@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
 
-    <title>Recommoner</title>
+    <title>Recommoner - Download</title>
 
     <meta name="description" content="Recommoner is a platform built to solve social dilemmas.">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
@@ -91,21 +91,12 @@
     </style>
 
     <style>
-        html {
-            /*background-color: #2F241F;*/
-        }
-
         #content {
-            height: 100vh;
             vertical-align: middle;
             margin: 0 auto;
             display: flex;
             justify-content: center;
             align-items: center;
-        }
-
-        article {
-            /*background-color: #FF7734;*/
         }
     </style>
 
@@ -125,7 +116,7 @@
                     <a class="f7 hover-orange no-underline white dn dib-ns pv2 ph3" href="#">About</a>
                     <a class="f7 hover-orange no-underline white dn dib-ns pv2 ph3" href="#">Resources</a>
                     <a class="f7 hover-orange no-underline white dn dib-l pv2 ph3" href="#">Blog</a>
-                    <a class="f7 hover-orange no-underline white dn dib-l pv2 ph3" href="/download">Download</a>
+                    <a class="f7 hover-orange no-underline white dn dib-l pv2 ph3" href="/download.html">Download</a>
                     <a id="loginBtn" class="f7 hover-orange no-underline white dib ml2 pv2 ph4 ba br2 mr2 mr3-ns grow" href="#">Log In</a>
                     <a id="signupBtn" class="f7 hover-white no-underline white dib mh0 pv2 ph4 br2 mr2 mr3-ns grow" href="/signup.html">Sign Up</a>
                 </div>
@@ -133,29 +124,44 @@
         </header>
 
         <div id="content">
-            <article class="mw7 center ph3 ph5-ns br2 pv5 mb5">
+            <article class="mw7 mt4 center ph3 ph5-ns pv4 mb5 br3 bg-white">
                 <h1 class="fw6 f3 f2-ns tc lh-title mt0 mb3">Big things are in the works. Recommoner is coming.</h1>
                 <h2 class="fw3 f4 lh-copy tc mt0 mb3">Engage your group and make decisions together. We
                   want you to be involved. Sign up and we'll let you know as soon as Recommoner is ready.</h2>
-                <form class="pa4 black-80" action="submit.php" method="POST">
+                <article class="cf">
+                    <div class="fl w-100 w-50-ns bg-near-white tc">
+                      <form class="pa4 black-80" action="" method="">
+                          <div class="measure center">
+                              <label for="email" class="f6 b db mb2">Email</label>
+                              <input name="email" id="email" class="input-reset ba b--black-20 br1 pa2 mb2 db w-100" type="text" aria-describedby="name-desc">
+                              <small id="name-desc" class="f6 db mb3">Enter your email if you want to stay informed. We value your privacy and will never send you spam.</small>
+                              <input type="submit" name="submit" placeholder="Sign Up" class="f6 br3 white no-underline bg-orange ba b--orange grow pv2 ph4 dib fr" />
+                          </div>
+                      </form>
+                    </div>
+                    <div class="fl w-100 w-50-ns bg-light-gray tc">
+                        <h1>Column Two</h1>
+                    </div>
+                </article>
+                <!-- <form class="pa4 black-80" action="" method="">
                     <div class="measure center">
                         <label for="email" class="f6 b db mb2">Email</label>
                         <input name="email" id="email" class="input-reset ba b--black-20 br1 pa2 mb2 db w-100" type="text" aria-describedby="name-desc">
                         <small id="name-desc" class="f6 db mb3">Enter your email if you want to stay informed. We value your privacy and will never send you spam.</small>
-                        <input type="submit" name="submit" placeholder="Sign Up" class="f6 br3 white no-underline bg-orange ba b--orange grow pv2 ph4 dib fr"/>
+                        <input type="submit" name="submit" placeholder="Sign Up" class="f6 br3 white no-underline bg-orange ba b--orange grow pv2 ph4 dib fr" />
                     </div>
-                </form>
+                </form> -->
             </article>
-        </main>
+    </main>
 
-        <footer class="pv4 white">
-            <small class="f6 db tc">© 2017 <span class="ttu">Recommoner</span>. All Rights Reserved</small>
-            <div class="tc mt1">
-                <a href="#" title="Language" class="f6 dib ph2 link white dim">Language</a>
-                <a href="#" title="Terms" class="f6 dib ph2 link white dim">Terms of Use</a>
-                <a href="#" title="Privacy" class="f6 dib ph2 link white dim">Privacy</a>
-            </div>
-        </footer>
+    <footer class="pv4 white">
+        <small class="f6 db tc">© 2017 <span class="ttu">Recommoner</span>. All Rights Reserved</small>
+        <div class="tc mt1">
+            <a href="#" title="Language" class="f6 dib ph2 link white dim">Language</a>
+            <a href="#" title="Terms" class="f6 dib ph2 link white dim">Terms of Use</a>
+            <a href="#" title="Privacy" class="f6 dib ph2 link white dim">Privacy</a>
+        </div>
+    </footer>
     </main>
 </body>
 
