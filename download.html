@@ -95,6 +95,8 @@
         }
     </style>
 
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
     <style>
         #content {
             vertical-align: middle;
@@ -163,8 +165,17 @@
                                         <label for="research" class="lh-copy">Research</label>
                                     </div>
                                 </fieldset>
+                                <form action="?" method="POST">
+                                    <div class="g-recaptcha mt3" data-sitekey="your_site_key"></div>
+                                    <br/>
+                                </form>
                                 <small id="disclosure" class="f6 db mv3">We would like to stay connected. By downloading our resources, you agree to grant us the ability to follow up with you with correspondence relating to your usage.</small>
-                                <input type="submit" name="submit" placeholder="Sign Up" class="f6 br3 white no-underline bg-orange ba b--orange grow pv2 ph4 dib fr" />
+                                <h2 class="tc pt3 fw5"> Submit and Download</h2>
+                                <input type="button" name="platform-toolkit" value="Platform Toolkit" class="f5 fw6 br2 bw1 blue no-underline bg-white ba b--blue pv3 ph4 w-100" />
+                                <input type="button" name="platform-toolkit" value="Recommoning Matrix" class="f5 fw6 br2 bw1 blue no-underline bg-white ba b--blue pv3 ph4 w-100 mt1" />
+                                <input type="button" name="platform-toolkit" value="Hand Out" class="f5 fw6 br2 bw1 blue no-underline bg-white ba b--blue pv3 ph4 w-100 mt1" />
+
+
                             </div>
                         </form>
                     </div>
