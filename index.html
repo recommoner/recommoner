@@ -112,16 +112,32 @@
                 </div>
             </nav>
         </header>
-        <div id="heroimg" class="cover vh-75 bg-left pv2 db" style="background-image: url(img/heroimg.png);">
-            <div id="maintext" class="pt5 ph1 mr4 measure-narrow fr">
-                <h1 class="f2 f1-l mb0 lh-solid">platform your negotiations</h1>
-                <h2 class="f3 mt2 mb3 fw4">Engage your group and make decisions together.</h2>
-                <a id="exploreBtn" class="f6 hover-white no-underline white dib pa3 br2 mr2 mr3-ns grow ttu" href="construction/">Explore Now Free</a>
+        <div id="slider" class="">
+            <div class="cover vh-75 bg-left pv2 db" style="background-image: url(img/eviction.png);">
+                <div id="maintext" class="pt5 ph1 mr4 measure-narrow fr">
+                    <h1 class="f2 f1-l mb0 lh-solid">platform your negotiations</h1>
+                    <h2 class="f3 mt2 mb3 fw4">Engage your group and make decisions together.</h2>
+                    <a id="exploreBtn" class="f6 hover-white no-underline white dib pa3 br2 mr2 mr3-ns grow ttu" href="construction/">Explore Now Free</a>
+                </div>
+            </div>
+            <div class="cover vh-75 bg-left pv2 db" style="background-image: url(img/village.png);">
+                <div id="maintext" class="pt5 ph1 mr4 measure-narrow fr">
+                    <h1 class="f2 f1-l mb0 lh-solid">different roles</h1>
+                    <h2 class="f3 mt2 mb3 fw4">Based on the Yoruba village idea, roles open up new spaces for commons-based agreements</h2>
+                    <a id="exploreBtn" class="f6 hover-white no-underline white dib pa3 br2 mr2 mr3-ns grow ttu" href="construction/">Explore Now Free</a>
+                </div>
+            </div>
+            <div class="cover vh-75 bg-left pv2 db" style="background-image: url(img/differenceandinclusion.png);">
+                <div id="maintext" class="pt5 ph1 mr4 measure-narrow fr">
+                    <h1 class="f2 f1-l mb0 lh-solid">difference & inclusion</h1>
+                    <h2 class="f3 mt2 mb3 fw4">Form collective rules that will respect individual interests</h2>
+                    <a id="exploreBtn" class="f6 hover-white no-underline white dib pa3 br2 mr2 mr3-ns grow ttu" href="construction/">Explore Now Free</a>
+                </div>
             </div>
         </div>
 
         <!-- <article id="aboutwrap" class="vh-25 db"> -->
-            <div id="about" class="white pt3 ml5 pa2 center measure">
+        <!-- <div id="about" class="white pt3 ml5 pa2 center measure">
                 <h1 class="tc">About</h1>
                 <div id="slider" class="slider single-item h-50 contain">
                     <div><img src="img/stock.jpg"></div>
@@ -129,7 +145,7 @@
                     <div><img src="img/eviction.png"></div>
                 </div>
                 <h2 class="f5 mt2 mb3 fw4">Lorem ipsum dolor sit amet, pri cu novum maiorum maluisset, utroque adversarium id nam. No brute blandit mediocrem cum, dicunt percipit ex ius. Qui amet veri imperdiet et, nostro aliquam an duo. Prompta virtute suscipit ad vis, alia graece malorum has et. Ea facer inermis cum, vis facilisi phaedrum eu, pro et eleifend pericula gloriatur. Sea error iisque ei, per dolor congue ex.</h2>
-            </div>
+            </div> -->
         <!-- </article> -->
 
         <footer class="pv4 white">
@@ -150,8 +166,8 @@
         $(document).ready(function() {
             $('#slider').slick({
                 infinite: true,
-                // slidesToShow: 2,
-                // slidesToScroll: 4
+                speed: 500,
+                autoplay: true
             });
         });
     </script>
