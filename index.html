@@ -20,6 +20,9 @@
     <link rel="stylesheet" type="text/css" href="slick/slick.css" />
     <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
 
+    <link href="http://vjs.zencdn.net/5.19.2/video-js.css" rel="stylesheet">
+
+
     <link rel="stylesheet" type="text/css" href="css/tachyons.css">
     <link rel="stylesheet" type="text/css" href="css/style.css" />
 </head>
@@ -67,17 +70,21 @@
             </div>
         </div>
 
-        <!-- <article id="aboutwrap" class="vh-25 db"> -->
-        <!-- <div id="about" class="white pt3 ml5 pa2 center measure">
-                <h1 class="tc">About</h1>
-                <div id="slider" class="slider single-item h-50 contain">
-                    <div><img src="img/stock.jpg"></div>
-                    <div><img src="img/tempimg1.png"></div>
-                    <div><img src="img/eviction.png"></div>
-                </div>
-                <h2 class="f5 mt2 mb3 fw4">Lorem ipsum dolor sit amet, pri cu novum maiorum maluisset, utroque adversarium id nam. No brute blandit mediocrem cum, dicunt percipit ex ius. Qui amet veri imperdiet et, nostro aliquam an duo. Prompta virtute suscipit ad vis, alia graece malorum has et. Ea facer inermis cum, vis facilisi phaedrum eu, pro et eleifend pericula gloriatur. Sea error iisque ei, per dolor congue ex.</h2>
-            </div> -->
-        <!-- </article> -->
+        <div id="about" class="white pt3 pa2 center mw7">
+            <h2 class="tc fw5">About</h2>
+            <video id="video" class="video-js center" controls preload="auto" width="640" height="400" poster="vids/poster.jpg" data-setup="{}">
+              <source src="vids/large.mp4" type='video/mp4'>
+              <source src="vids/large.webm" type='video/webm'>
+              <source src="vids/small.mp4" type='video/mp4'>
+              <source src="vids/small.webm" type='video/webm'>
+              <p class="vjs-no-js">
+                To view this video please enable JavaScript, and consider upgrading to a web browser that
+                <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+              </p>
+            </video>
+            <p class="f5 mt2 mb3 fw4">Lorem ipsum dolor sit amet, pri cu novum maiorum maluisset, utroque adversarium id nam. No brute blandit mediocrem cum, dicunt percipit ex ius. Qui amet veri imperdiet et, nostro aliquam an duo. Prompta virtute suscipit ad vis, alia graece
+                malorum has et. Ea facer inermis cum, vis facilisi phaedrum eu, pro et eleifend pericula gloriatur. Sea error iisque ei, per dolor congue ex.</p>
+        </div>
 
         <footer class="pv4 white">
             <div class="tc mv2">
@@ -85,13 +92,14 @@
                 <a href="#" title="Terms" class="f6 dib ph2 link white dim">Terms of Use</a>
                 <a href="#" title="Privacy" class="f6 dib ph2 link white dim">Privacy</a>
             </div>
-            <small class="f7 db tc"> Content licensed under a Creative Commons Attribution Non-Commercial ShareAlike 3.0 Unported License.<br><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/3.0/80x15.png"></a></small>
+            <small class="f7 db tc">Content licensed under a Creative Commons Attribution Non-Commercial ShareAlike 3.0 Unported License.<br><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/3.0/80x15.png"></a></small>
         </footer>
     </main>
 
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="slick/slick.min.js"></script>
+    <script src="http://vjs.zencdn.net/5.19.2/video.js"></script>
 
     <script type="text/javascript">
         $(document).ready(function() {
