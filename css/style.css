@@ -1,0 +1,65 @@
+body {
+    background-color: #FF7734;
+    font-family: "UniversLTStd-Light", "Univers", sans-serif;
+}
+
+nav {
+    background-color: #2F241F;
+    /* brown */
+    text-transform: uppercase;
+    font-family: "UniversLTStd-Light", "Univers", sans-serif;
+}
+
+footer {
+    background-color: #FF7734;
+    /* orange */
+    min-height: 100px;
+    max-height: 150px;
+    width: 100%;
+    /*position: absolute;*/
+    bottom: 0;
+    left: 0;
+}
+
+#maintext {
+    color: #293B4E;
+}
+
+#maintext h1 {
+    font-family: "UniversLTStd-BoldCn", "Univers", sans-serif;
+}
+
+#wrapper {
+    min-height: 100%;
+}
+
+#loginBtn {
+    border-color: #FF7734;
+    font-family: "UniversLTStd-Light", "Univers", sans-serif;
+}
+
+#signupBtn {
+    background-color: #FF7734;
+    /* correct orange */
+}
+
+#exploreBtn {
+    background-color: #FF7734;
+}
+
+/* UNIVERS */
+
+@font-face {
+    font-family: "UniversLTStd";
+    src: url('font/UniversLTStd.otf');
+}
+
+@font-face {
+    font-family: "UniversLTStd-BoldCn";
+    src: url('font/UniversLTStd-BoldCn.otf');
+}
+
+@font-face {
+    font-family: "UniversLTStd-Light";
+    src: url('font/UniversLTStd-Light.otf');
+}
