@@ -51,15 +51,15 @@ footer {
 
 @font-face {
     font-family: "UniversLTStd";
-    src: url('font/UniversLTStd.otf');
+    src: url('../font/UniversLTStd.otf');
 }
 
 @font-face {
     font-family: "UniversLTStd-BoldCn";
-    src: url('font/UniversLTStd-BoldCn.otf');
+    src: url('../font/UniversLTStd-BoldCn.otf');
 }
 
 @font-face {
     font-family: "UniversLTStd-Light";
-    src: url('font/UniversLTStd-Light.otf');
+    src: url('../font/UniversLTStd-Light.otf');
 }
