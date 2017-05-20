@@ -1,6 +1,6 @@
 body {
     background-color: #2F241F;
-    font-family: "UniversLTStd-Light", "Univers", sans-serif;
+    font-family: "UniversLTStd-Light", "Univers", Univers, -apple-system, BlinkMacSystemFont, 'avenir next', avenir, 'helvetica neue', helvetica, ubuntu, roboto, noto, 'segoe ui', arial, sans-serif;
 }
 
 nav {
