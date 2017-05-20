@@ -1,5 +1,5 @@
 body {
-    background-color: #FF7734;
+    background-color: #2F241F;
     font-family: "UniversLTStd-Light", "Univers", sans-serif;
 }
 
@@ -32,6 +32,7 @@ footer {
 
 #wrapper {
     min-height: 100%;
+    background-color: #FF7734;
 }
 
 #loginBtn {
