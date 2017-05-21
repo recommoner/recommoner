@@ -1,6 +1,10 @@
 body {
     background-color: #2F241F;
-    font-family: "UniversLTStd-Light", "Univers", Univers, -apple-system, BlinkMacSystemFont, 'avenir next', avenir, 'helvetica neue', helvetica, ubuntu, roboto, noto, 'segoe ui', arial, sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, 'avenir next', avenir, 'helvetica neue', helvetica, ubuntu, roboto, noto, 'segoe ui', arial, sans-serif;
+}
+
+slider {
+    font-family: "UniversLTStd-Light", "Univers", Univers;
 }
 
 nav {
@@ -12,7 +16,6 @@ nav {
 
 footer {
     background-color: #2F241F;
-
     /* orange */
     min-height: 100px;
     max-height: 150px;
@@ -48,6 +51,7 @@ footer {
 #exploreBtn {
     background-color: #FF7734;
 }
+
 
 /* UNIVERS */
 

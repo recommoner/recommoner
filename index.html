@@ -10,7 +10,6 @@
 
     <title>Recommoner</title>
 
-
     <link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
     <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
@@ -23,17 +22,24 @@
 
     <link href="https://vjs.zencdn.net/5.19.2/video-js.css" rel="stylesheet">
 
-
     <link rel="stylesheet" type="text/css" href="css/tachyons.css">
     <link rel="stylesheet" type="text/css" href="css/style.css" />
 
-    <!-- /*<style>
-      .slick-prev {
-        left: 25px;
-        background-color: blue;
-        }
+    <style>
+    .bulletpoint {
+      font-weight: 300;
+      font-size: 1.5em;
+    }
+    .title {
+      color: #2f241f;
+      font-weight: 800;
+    }
 
-    </style>*/ -->
+    #video {
+      /*height: inherit;*/
+    }
+    </style>
+
 </head>
 
 <body class="">
@@ -77,9 +83,10 @@
             </div>
         </div>
 
-        <div id="about" class="white pt3 pa2 center mw7">
-            <h1 class="tc fw5">About</h2>
-            <video id="video" class="video-js center" controls preload="auto" width="640" height="400" poster="vids/poster.jpg" data-setup="{}">
+
+        <article class="cf center white pt3 center mw8">
+          <div id="vidcol" class="fl w-100 w-50-ns">
+            <video id="video" class="video-js center" controls preload="auto" width="100%" height="100%" poster="vids/poster.jpg" data-setup="{}">
               <source src="vids/large.mp4" type='video/mp4'>
               <source src="vids/large.webm" type='video/webm'>
               <source src="vids/small.mp4" type='video/mp4'>
@@ -89,9 +96,21 @@
                 <a href="https://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
               </p>
             </video>
-            <p class="f5 mt2 mv3 fw4">Lorem ipsum dolor sit amet, pri cu novum maiorum maluisset, utroque adversarium id nam. No brute blandit mediocrem cum, dicunt percipit ex ius. Qui amet veri imperdiet et, nostro aliquam an duo. Prompta virtute suscipit ad vis, alia graece
-                malorum has et. Ea facer inermis cum, vis facilisi phaedrum eu, pro et eleifend pericula gloriatur. Sea error iisque ei, per dolor congue ex.</p>
-        </div>
+          </div>
+          <div id="textcol" class="fl w-100 w-50-ns">
+            <h1 class="tc mb1">About</h1>
+            <span class="f5 fw3">Recommoner is a set of tools, resources, and spaces for negotiations and collective decision making.</span>
+            <div class="bulletpoint pv2">
+              <p class="f6"><span class="title">Toolkit</span> Prompts & principles for challenge negotiations.
+            </div>
+            <div class="bulletpoint pv2">
+              <p class="f6"><span class="title">Narratives</span> Support arguments to improve negotiations and formulate agreements. <br><a href="#">Read Narratives</a>
+            </div>
+            <div class="bulletpoint pv2">
+              <p class="f6"><span class="title">Shared responsibilities</span> Prompts & principles for challenge negotiations.
+            </div>
+          </div>
+        </article>
 
         <footer class="pv4 white">
             <div class="tc mv2">
@@ -102,41 +121,41 @@
             <small class="f7 db tc">Content licensed under a Creative Commons Attribution Non-Commercial ShareAlike 3.0 Unported License.<br><br><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/3.0/80x15.png"></a></small>
         </footer>
     </main>
+    <div id="otherjs">
+      <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+      <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+      <script type="text/javascript" src="slick/slick.min.js"></script>
+      <script src="https://vjs.zencdn.net/5.19.2/video.js"></script>
+      <script type="text/javascript">
+          $(document).ready(function() {
+              $('#slider').slick({
+                  infinite: true,
+                  speed: 3500,
+                  autoplay: true,
+                  // accessibility: false,
+                  // adaptiveHeight: false,
+                  dots: true,
+                  arrows: true
+              });
+          });
+      </script>
+      <script>
+          (function(i, s, o, g, r, a, m) {
+              i['GoogleAnalyticsObject'] = r;
+              i[r] = i[r] || function() {
+                  (i[r].q = i[r].q || []).push(arguments)
+              }, i[r].l = 1 * new Date();
+              a = s.createElement(o),
+                  m = s.getElementsByTagName(o)[0];
+              a.async = 1;
+              a.src = g;
+              m.parentNode.insertBefore(a, m)
+          })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
 
-    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-    <script type="text/javascript" src="slick/slick.min.js"></script>
-    <script src="https://vjs.zencdn.net/5.19.2/video.js"></script>
-
-    <script type="text/javascript">
-        $(document).ready(function() {
-            $('#slider').slick({
-                infinite: true,
-                speed: 3500,
-                autoplay: true,
-                // accessibility: false,
-                // adaptiveHeight: false,
-                dots: true,
-                arrows: true
-            });
-        });
-    </script>
-    <script>
-        (function(i, s, o, g, r, a, m) {
-            i['GoogleAnalyticsObject'] = r;
-            i[r] = i[r] || function() {
-                (i[r].q = i[r].q || []).push(arguments)
-            }, i[r].l = 1 * new Date();
-            a = s.createElement(o),
-                m = s.getElementsByTagName(o)[0];
-            a.async = 1;
-            a.src = g;
-            m.parentNode.insertBefore(a, m)
-        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
-
-        ga('create', 'UA-97721582-1', 'auto');
-        ga('send', 'pageview');
-    </script>
+          ga('create', 'UA-97721582-1', 'auto');
+          ga('send', 'pageview');
+      </script>
+    </div>
 
 </body>
 
