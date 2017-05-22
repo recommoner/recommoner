@@ -23,7 +23,10 @@
     <link href="https://vjs.zencdn.net/5.19.2/video-js.css" rel="stylesheet">
 
     <link rel="stylesheet" type="text/css" href="css/tachyons.css">
-    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+
+    <!-- <script src="https://use.fontawesome.com/e6d8ed2f0f.js"></script> --> <!-- generic fontawesome -->
+    <script src="https://use.fontawesome.com/c4970f7ace.js"></script> <!-- my specific asynchronous fontawesome -->
 
     <style>
     .bulletpoint .title {
@@ -35,8 +38,20 @@
       display: block;
     }
 
-    #video {
-      /*height: inherit;*/
+    .slick-next {
+      right: 25px;
+      z-index: 10;
+    }
+
+    .slick-next:before, .slick-prev:before {
+      color: orange;
+      height: 2em;
+      width: 2em;
+    }
+
+    .slick-prev {
+      left: 25px;
+      z-index: 10;
     }
     </style>
 
@@ -61,23 +76,30 @@
         </header>
         <div id="slider" class="">
             <div class="cover bg-left pv6 db" style="background-image: url(img/eviction.png);">
-                <div id="maintext" class="pt5 ph1 mr4 measure-narrow fr">
+                <div id="maintext" class="pt5 ph1 mr5 measure-narrow fr">
                     <h1 class="f2 f1-l mb0 lh-solid">platform your negotiations</h1>
                     <h2 class="f3 mt2 mb3 fw4">Engage your group and make decisions together.</h2>
                     <a id="exploreBtn" class="f6 hover-white no-underline white dib pa3 br2 mr2 mr3-ns grow ttu" href="construction/">Explore Now Free</a>
                 </div>
             </div>
             <div class="cover bg-left pv6 db" style="background-image: url(img/village.png);">
-                <div id="maintext" class="pt5 ph1 mr4 measure-narrow fr">
+                <div id="maintext" class="pt5 ph1 mr5 measure-narrow fr">
                     <h1 class="f2 f1-l mb0 lh-solid">different roles</h1>
                     <h2 class="f3 mt2 mb3 fw4">Based on the Yoruba village idea, roles open up new spaces for commons-based agreements</h2>
                     <a id="exploreBtn" class="f6 hover-white no-underline white dib pa3 br2 mr2 mr3-ns grow ttu" href="construction/">Explore Now Free</a>
                 </div>
             </div>
             <div class="cover bg-left pv6 db" style="background-image: url(img/differenceandinclusion.png);">
-                <div id="maintext" class="pt5 ph1 mr4 measure-narrow fr">
+                <div id="maintext" class="pt5 ph1 mr5 measure-narrow fr">
                     <h1 class="f2 f1-l mb0 lh-solid">difference & inclusion</h1>
                     <h2 class="f3 mt2 mb3 fw4">Form collective rules that will respect individual interests</h2>
+                    <a id="exploreBtn" class="f6 hover-white no-underline white dib pa3 br2 mr2 mr3-ns grow ttu" href="construction/">Explore Now Free</a>
+                </div>
+            </div>
+            <div class="cover bg-left pv6 db" style="background-image: url(img/negotiatefairly.png);">
+                <div id="maintext" class="pt5 ph1 mr5 measure-narrow fr">
+                    <h1 class="f2 f1-l mb0 lh-solid">Negotiate Fairly</h1>
+                    <h2 class="f3 mt2 mb3 fw4">Learn patterns of negotiation built on reciprocity, trust, and reputation.</h2>
                     <a id="exploreBtn" class="f6 hover-white no-underline white dib pa3 br2 mr2 mr3-ns grow ttu" href="construction/">Explore Now Free</a>
                 </div>
             </div>
@@ -97,7 +119,7 @@
               </p>
             </video>
           </div>
-          <div id="textcol" class="fl w-100 w-50-ns">
+          <div id="textcol" class="fl w-100 w-50-ns pb2">
             <h1 class="tl mb1">About</h1>
             <span class="f5 fw3 pb3 db">Recommoner is a set of tools, resources, and spaces for negotiations and collective decision making.</span>
             <div class="bulletpoint pv2">
@@ -132,8 +154,6 @@
                   infinite: true,
                   speed: 3500,
                   autoplay: true,
-                  // accessibility: false,
-                  // adaptiveHeight: false,
                   dots: true,
                   arrows: true
               });
