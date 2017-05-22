@@ -53,6 +53,11 @@
       left: 25px;
       z-index: 10;
     }
+
+    .video-dimensions {
+      width: 300px;
+      height: 200px;
+    }
     </style>
 
 </head>
@@ -105,10 +110,9 @@
             </div>
         </div>
 
-
-        <article class="cf center white pt3 center mw8">
+        <article class="cf center white pt2 center mw8">
           <div id="vidcol" class="fl w-100 w-50-ns">
-            <video id="video" class="video-js center" controls preload="auto" width="100%" height="100%" poster="vids/poster.jpg" data-setup="{}">
+            <video id="video" class="video-js center" controls preload="auto" poster="vids/poster.jpg" data-setup="{}">
               <source src="vids/large.mp4" type='video/mp4'>
               <source src="vids/large.webm" type='video/webm'>
               <source src="vids/small.mp4" type='video/mp4'>
@@ -123,7 +127,7 @@
             <h1 class="tl mb1">About</h1>
             <span class="f5 fw3 pb3 db">Recommoner is a set of tools, resources, and spaces for negotiations and collective decision making.</span>
             <div class="bulletpoint pv2">
-              <span class="f6"><span class="title f5 b">Toolkit</span> Prompts & principles for challenge negotiations.</span>
+              <span class="f6"><span class="title f5 b">Toolkit</span> Prompts & principles for challenge negotiations.</span><br><a href="pdfs/toolkit.pdf">Check out ToolKit</a>
             </div>
             <div class="bulletpoint pv2">
               <span class="f6"><span class="title f5 b">Narratives</span> Support arguments to improve negotiations and formulate agreements.<br><a href="#">Read Narratives</a></span>
@@ -155,7 +159,8 @@
                   speed: 3500,
                   autoplay: true,
                   dots: true,
-                  arrows: true
+                  arrows: true,
+                  adaptiveHeight: true
               });
           });
       </script>
