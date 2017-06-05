@@ -6,9 +6,8 @@
 	.st0{fill:#BCB4AF;}
 	.st1{fill:#FFFFFF;}
 	.st2{fill:none;stroke:#EF7622;stroke-width:3.14;stroke-miterlimit:10;}
-	.st3{fill:#DBDBDB;}
-	.st4{font-family:'SanFranciscoText-Medium';}
-	.st5{font-size:16.3567px;}
+	.st3{font-family:'SanFranciscoText-Medium';}
+	.st4{font-size:16.3567px;}
 </style>
 <title>Asset 1</title>
 <g id="Layer_2">
@@ -77,5 +76,5 @@
 		<circle class="st1" cx="39.9" cy="17.8" r="2.6"/>
 	</g>
 </g>
-<text transform="matrix(1 0 0 1 252.21 45.9619)" class="st3 st4 st5">BETA</text>
+<text transform="matrix(1 0 0 1 252.21 45.9619)" class="st1 st3 st4">BETA</text>
 </svg>
